@@ -22,6 +22,7 @@ public class SparkRDDService
      */
     public void connect()
     {
+
         SparkConf sparkConf = new SparkConf()
                 .setAppName("Flight")
                 .setMaster("local");
@@ -31,7 +32,7 @@ public class SparkRDDService
 
     /**
      * считываем данные из kafka
-     * @return возвращаем словарь
+     * возвращаем словарь
      * ключь является связка вида: Город вылета,Город прилета,Дата вылета
      * значение количество таких данных
      */
